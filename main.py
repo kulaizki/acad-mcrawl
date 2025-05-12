@@ -53,6 +53,7 @@ if __name__ == "__main__":
 
     results = {}
     for url in url_list:
+        print(f"Processing URL: {url} ...")
         if is_allowed_by_robots(url):
             results[url] = scrape_emails_from_urls([url])[url]
         else:
