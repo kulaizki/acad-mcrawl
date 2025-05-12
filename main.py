@@ -1,4 +1,4 @@
-from scraper import scrape_emails_from_urls
+from scraper import scrape_emails_from_urls, is_allowed_by_robots
 
 DATA_FILE = "data/urls.txt"
 
@@ -21,7 +21,15 @@ if __name__ == "__main__":
     print("3. Use any found emails responsibly and ethically.")
     print("---")
 
-    results = scrape_emails_from_urls(url_list)
+    results = {}
+    for url in url_list:
+        if is_allowed_by_robots(url):
+            results[url] = scrape_emails_from_urls([url])[url]
+        else:
+            print(f"\nURL: {url}")
+            print("WARNING: This URL is not allowed to be scraped according to robots.txt. Skipping.")
+            results[url] = []
+
     for url, emails in results.items():
         print(f"\nURL: {url}")
         if emails:

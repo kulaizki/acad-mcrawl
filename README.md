@@ -1,4 +1,4 @@
-# Neuromail Scraper
+# Acad Mailcrawl 
 
 ## Project Structure
 
