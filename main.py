@@ -1,4 +1,4 @@
-from scraper.scraper import scrape_emails_from_urls
+from scraper import scrape_emails_from_urls
 
 DATA_FILE = "data/urls.txt"
 

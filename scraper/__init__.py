@@ -1,1 +1,1 @@
- 
+from .scraper import scrape_emails_from_urls 
