@@ -72,4 +72,8 @@ acad-mcrawl/
 - The tool is designed specifically for academic and research institution websites
 - Results may vary based on website structure and accessibility
 - Some websites may block automated access
-- Always ensure compliance with local laws and regulations regarding data collection 
+- Always ensure compliance with local laws and regulations regarding data collection
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
